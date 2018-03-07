@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Volunteer with TOLU</title>
+</head>
+<body>
+
+<nav class="navbar navbar-toggleable-sm navbar-inverse bg-info">
+    <div class="container">
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <a href="index.html" class="navbar-brand"><img src="img/logo1.jpg" width="50" height="50" alt="" class="img-fluid d-inline align-left mr-2"></a>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link ">Become A Volunteer </a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link active">Create A Team </a>
+          </li>
+          <!-- <li class="nav-item">
+            <a href="about.html" class="nav-link">About Us </a>
+          </li> -->
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link ">Contact </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+ <!-- CREATE SECTION -->
+  <section id="create-section" class="py-5 bg-inverse text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <h3>Create Your Own Team</h3>
+          <p>Community service can be done by individuals or as a group. You can create and manage your local team. </p>
+          <div class="d-flex flex-row">
+            <div class="p-4 align-self-start">
+              <i class="fa fa-check"></i>
+            </div>
+            <div class="p-4 align-self-end">
+              This is the crucial aspect of the program. There are recruitment sheets for individuals who want to form groups. There is also a community form that tracks all your community service. 
+            </div>
+          </div>
+
+          <div class="d-flex flex-row">
+            <div class="p-4 align-self-start">
+              <i class="fa fa-check"></i>
+            </div>
+            <div class="p-4 align-self-end">
+              In this form, you record the places where you serve.  A reputable person from the organization you serve in acts as your supervisor and he/she has to sign the number of hours of service you perform. 
+            </div>
+          </div>
+          <div class="d-flex flex-row">
+            <div class="p-4 align-self-start">
+              <i class="fa fa-check"></i>
+            </div>
+            <div class="p-4 align-self-end">
+              This sheet will be submitted at the end of the month for validation. 
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 pt-5 mt-5 d-none d-sm-block">
+          <img src="img/v1.png" alt="" class="img-fluid mb-3 rounded-circle">
+        </div>
+      </div>
+    </div>
+  </section>
+    
+
+     <!-- CREATE SECTION -->
+  <section id="create-section" class="py-5 ">
+    <div class="container">
+      <div class="row">
+      <div class="card card-block py-5">
+        <h3 class="pb-3" >Register A Team.</h3>
+        <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzIj7QacWkdB3AeOhMvz6xCnqoMlrDNKv2bXglfyNA-rXYpYqxn/exec">
+          <div class="form-group">
+            <div class="input-group input-group-lg">
+              <span class="input-group-addon bg-info text-white">
+                <i class="fa fa-user"></i>
+              </span>
+              <input type="text" class="form-control bg-inverse text-white" placeholder=" Team Name" id="Team Name" name="Team Name">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group input-group-lg">
+              <span class="input-group-addon bg-info text-white">
+                <i class="fa fa-building"></i>
+              </span>
+              <input type="text" class="form-control bg-inverse text-white" placeholder=" Team Location" id="location" name="location">
+            </div>
+          </div>
+            
+          <div class="form-group">
+            <div class="input-group input-group-lg">
+              <span class="input-group-addon bg-info text-white">
+                <i class="fa fa-pencil"></i>
+              </span>
+              <textarea rows="5" class="form-control bg-inverse text-white" placeholder="Team Description" id="Description" name="Description"></textarea>
+            </div>
+          </div>
+           <div class="form-group">
+            <div class="input-group input-group-lg">
+              <span class="input-group-addon bg-info text-white">
+                <i class="fa fa-user"></i>
+              </span>
+              <input type="text" class="form-control bg-inverse text-white" placeholder=" Team Leader Name" id="Team Leader Name" name="Team Leader Name">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group input-group-lg">
+              <span class="input-group-addon bg-info text-white">
+                <i class="fa fa-envelope"></i>
+              </span>
+              <input type="email" class="form-control bg-inverse text-white" placeholder="Team Leader Email" id="email" name="email">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="input-group input-group-lg">
+              <span class="input-group-addon bg-info text-white">
+                <i class="fa fa-phone"></i>
+              </span>
+              <input type="number" class="form-control bg-inverse text-white" placeholder="Team Leader Phone Number" id="phone" name="phone">
+            </div>
+          </div>
+
+          <input type="submit" class="btn btn-info btn-block btn-lg" value="Register">
+        </form>
+        <!-- Customise the Thankyou Message People See when they submit the form: -->
+        <div style="display:none;" id="thankyou_message">
+          <h5>Thank you for your interest in voluntering with us.</h5>
+          <p class="pt-1">You have taken the first big step. We are here to walk with you in the remaining steps. Our team will review your data and will get back to you soon.</p>
+          <p class="lead"><b>What is the aim of 20/30 challenge 2018 edition?</b></p>
+            <p>Our primary aim is to highlight the need and importance of community service in our society and to get 100 youth participating in the program all over Nigeria and perhaps the world. The secondary aim is to make this one of the biggest and most trending events on social media in 2018.</p>
+            <p class="lead"><b>What is expected of our Volunteers?</b></p>
+            <p>To be good ambassadors in all the places they serve. We also expect that the community forms are properly filled for validation at the end of the month. We are also hoping that our volunteers would spread the word and  recruit other persons so that we can reach our target of 100 volunteers.</p>
+
+          <p class="lead pt-1">Warm regards from all of us!!!</p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+
+     <footer id="main-footer" class="p-5 bg-inverse text-white">
+      <div class="row">
+        <div class="col">
+          <p class="text-center">Copyright &copy; 2018. T.O.L.U FOUNDATION. Designed by pAmA. </p>
+
+        </div>
+      </div>
+    </footer>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/tether.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+</body>
+</html>
